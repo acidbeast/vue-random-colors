@@ -1,6 +1,6 @@
 # vue-random-color
 
-https://github.com/acidbeast/vue-random-color/edit/master/LICENCE
+
 [![github license](https://badgen.net/github/license/acidbeast/vue-random-color)](https://github.com/acidbeast/vue-random-color/blob/master/LICENSE)
 
 
