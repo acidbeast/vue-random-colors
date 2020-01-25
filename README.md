@@ -1,13 +1,12 @@
 # vue-random-color
 
-
-[![npm package version](https://badgen.net/npm/v/v-hotkey)](https://npm.im/v-hotkey)
-[![github license](https://badgen.net/github/license/dafrok/v-hotkey)](https://github.com/dafrok/v-hotkey/blob/master/LICENSE)
+https://github.com/acidbeast/vue-random-color/edit/master/LICENCE
+[![github license](https://badgen.net/github/license/acidbeast/vue-random-color)](https://github.com/acidbeast/vue-random-color/blob/master/LICENSE)
 
 
 Vue 2.x directive for apply random colors to CSS properties of component.
-By default directive use 216 web safe colors. More info https://websafecolors.info
-But colors could be re-defined by user, see options section below.
+By default directive use 216 web safe colors. More info at https://websafecolors.info
+Colors could be re-defined by user, see options section below.
 
 
 ## Install
