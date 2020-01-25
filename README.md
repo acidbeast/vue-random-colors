@@ -32,7 +32,6 @@ Basic example
   <div v-random-color>
   ...
   </div>
-</template>
 ```
 
 # Options
@@ -51,7 +50,6 @@ Set list of colors:
   <div v-random-color="{ color: [ 'aaaaaa', 'cccccc', 'eeeeee' ] }">
   ...
   </div>
-</template>
 ```
 
 Set property:
@@ -60,7 +58,6 @@ Set property:
   <div v-random-color="{ property: 'color' }">
   ...
   </div>
-</template>
 ```
 
 Set event:
@@ -69,7 +66,6 @@ Set event:
   <div v-random-color="{ property: 'color', event: 'click' }">
   ...
   </div>
-</template>
 ```
 
 Change default color:
@@ -78,7 +74,6 @@ Change default color:
   <div v-random-color="{ default: 'ff0000' }">
   ...
   </div>
-</template>
 ```
 
 Set transition speed:
@@ -87,7 +82,6 @@ Set transition speed:
   <div v-random-color="{ transition: 0.5 }">
   ...
   </div>
-</template>
 ```
 
 # Demo
