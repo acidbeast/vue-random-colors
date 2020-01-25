@@ -63,7 +63,7 @@ Set property:
 Set event:
 
 ```vue
-  <div v-random-color="{ property: 'color', event: 'click' }">
+  <div v-random-color="{ event: 'click' }">
   ...
   </div>
 ```
@@ -83,6 +83,15 @@ Set transition speed:
   ...
   </div>
 ```
+
+Combination:
+
+```vue
+  <div v-random-color="{ event: 'click', property: 'border', default: 'ff0000', transition: 0.5 }">
+  ...
+  </div>
+```
+
 
 # Demo
 
