@@ -40,7 +40,7 @@ export const getColor = function (defaultColor, colors) {
 
 
 export const checkValue = function (prop, values) {
-  return values[prop] ? values[prop] : defaults[prop];
+  return values && values[prop] ? values[prop] : defaults[prop];
 }
 
 
@@ -51,7 +51,7 @@ export const processValues = function (values) {
     defaultColor: checkValue('default', values),
     transition: checkValue('transition', values)
   }
-  if (values.colors && Array.isArray(values.colors) && values.colors.length > 0) {
+  if (values && values.colors && Array.isArray(values.colors) && values.colors.length > 0) {
     output.colors = values.colors;
   }
   return output;
@@ -72,6 +72,9 @@ export default {
     element.addEventListener(eventName, eventHandler());
     if (eventName == 'mouseover') {
       element.addEventListener('mouseout', eventHandler(defaultColor));
+    }
+    if (eventName == 'mouseenter') {
+      element.addEventListener('mouseleave', eventHandler(defaultColor));
     }
   }
 }

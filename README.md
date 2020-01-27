@@ -45,22 +45,22 @@ Basic example
 ## Example
 
 ```vue
-  <div v-random-color="{ 
-    colors: [ 'aaaaaa', 'cccccc', 'eeeeee' ], 
+  <div v-random-color="{
+    colors: [ 'aaaaaa', 'cccccc', 'eeeeee' ],
     event: 'click',
     property: 'border',
     default: 'ff0000',
-    transition: 0.5 
+    transition: 0.5
   }">
   ...
   </div>
 ```
 
-# Demo
+## Demo
 
 Here
 
-# License
+## License
 
 MIT
 
