@@ -17,7 +17,7 @@ And then
 
 ```javascript
 import Vue from 'vue'
-import VueRandomColor from 'vue-random-color'
+import VueRandomColor from 'vue-random-colors'
 
 Vue.use(VueRandomColor)
 ```
