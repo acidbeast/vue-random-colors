@@ -1,3 +1,5 @@
+![Logo](http://dimko.org/images/vue-random-colors-logo.png)
+
 # vue-random-colors
 
 Vue 2.x directive for apply random colors to CSS properties of element.
