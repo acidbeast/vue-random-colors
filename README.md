@@ -8,7 +8,7 @@ Colors could be re-defined by user, see options section below.
 ## Install
 
 ```bash
-$ npm i --save vue-random-color
+$ npm i --save vue-random-colors
 ```
 
 And then
