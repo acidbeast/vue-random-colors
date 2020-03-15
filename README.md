@@ -56,7 +56,7 @@ Basic example
 
 ## Demo
 
-Come soon
+[Here](http://dimko.org/js/vue-random-colors/)
 
 ## License
 
