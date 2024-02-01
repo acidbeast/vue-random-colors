@@ -16,7 +16,7 @@ import {
   getColor,
   checkValue,
   processValues
-} from '../src/random-color.js'
+} from '../index.js'
 
 
 describe('Test random', () => {
@@ -48,17 +48,17 @@ describe('Test randomColor', () => {
 describe('Test getColor', () => {
   test('Empty call should return random color with #', () => {
     var regexp = new RegExp(/#[0369cf]{6}/g);
-    var color = getColor();
+    var color = getColor(null, null, randomColor);
     var result = color.match(regexp);
     expect(result).not.toBeNull();
   });
   test('Call with 1st argument return default color with #', () => {
-    var color = getColor('cc0000');
+    var color = getColor('cc0000', null, randomColor);
     expect(color).toBe('#cc0000');
   });
   test('Call with empty 1st argument and list of colors should return color with #', () => {
     var regexp = new RegExp(/#[0123456789abcdef]{6}/g);
-    var color = getColor(undefined,['aaaaaa','bbbbbb','cccccc']);
+    var color = getColor(undefined,['aaaaaa','bbbbbb','cccccc'], randomColor);
     var result = color.match(regexp);
     expect(result).not.toBeNull();
   });
@@ -79,22 +79,22 @@ describe('Test checkValue', () => {
 
 describe('Test processValues', () => {
   test('Empty call should return object with default values { background | mouseover | ffffff | null }', () => {
-    var result = processValues();
+    var result = processValues(null, checkValue);
     expect(result.propertyName).toBe('background');
     expect(result.eventName).toBe('mouseover');
     expect(result.defaultColor).toBe('ffffff');
     expect(result.transition).toBeNull();
   });
   test('Pass object with `property`, result should contain `propertyName` equalt to passed `event`', () => {
-    var result = processValues({ property: 'background' });
+    var result = processValues({ property: 'background' }, checkValue);
     expect(result.propertyName).toBe('background');
   });
   test('Pass object with `event`, result should contain `eventName` equal to passed `event`', () => {
-    var result = processValues({ event: 'click' });
+    var result = processValues({ event: 'click' }, checkValue);
     expect(result.eventName).toBe('click');
   });
   test('Pass object with `default`, result should contain `defaultColor` equal to passed `event`', () => {
-    var result = processValues({ default: 'cc0000' });
+    var result = processValues({ default: 'cc0000' }, checkValue);
     expect(result.defaultColor).toBe('cc0000');
   });
 });

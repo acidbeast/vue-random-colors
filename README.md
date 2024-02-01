@@ -2,9 +2,11 @@
 
 # vue-random-colors
 
-Vue 2.x directive for apply random colors to CSS properties of element.
+Vue 3.x directive for apply random colors to CSS properties of element.
 By default directive use 216 web safe colors. More info at https://websafecolors.info
 Colors could be re-defined by user, see options section below.
+
+Version for Vue 2.x can be found here https://github.com/acidbeast/vue-random-colors
 
 
 ## Install
@@ -62,3 +64,17 @@ Basic example
 
 MIT
 
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+```
+
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

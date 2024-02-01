@@ -1,47 +1,38 @@
 {
-  "name": "vue-random-colors",
-  "version": "2.0.0",
-  "description": "A Vue.js random color directive",
-  "main": "dist/index.umd.js",
+  "name": "vue3-random-colors",
+  "description": "Vue 3.x directive for apply random colors to CSS properties of HTML element.",
+  "version": "1.1.0",
+  "author": "Dmitry Shlepkin <acidl33t@gmail.com>",
+  "main": "lib/index.js",
+  "license": "MIT",
   "scripts": {
-    "start": "",
-    "build": "microbundle --entry src/index.js --target browser --format umd --name index",
+    "build": "rimraf lib && babel src -d lib --ignore src/__tests__",
     "test": "jest"
   },
-  "homepage": "https://github.com/acidbeast/vue-random-color#readme",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/acidbeast/vue-random-color.git"
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.9",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^29.7.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.5"
   },
   "keywords": [
-    "vue",
-    "directive",
-    "color",
-    "random"
+    "Vue",
+    "Vue 3.x",
+    "Vue3",
+    "Colors",
+    "Color",
+    "Vue Directive",
+    "Random Colors"
   ],
-  "author": "Dmitry Shlepkin",
-  "license": "MIT",
-  "dependencies": {
-    "vue": "^2.6.11"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.8.3",
-    "@babel/preset-env": "^7.8.3",
-    "babel-cli": "^6.26.0",
-    "babel-jest": "^25.1.0",
-    "babel-preset-env": "^1.7.0",
-    "cross-env": "^6.0.3",
-    "jest": "^25.1.0",
-    "lerna": "^3.20.2",
-    "microbundle": "^0.11.0",
-    "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1"
-  },
-  "bugs": {
-    "url": "https://github.com/acidbeast/vue-random-color/issues"
-  },
-  "directories": {
-    "test": "tests"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acidbeast/vue3-random-colors.git"
   }
 }
