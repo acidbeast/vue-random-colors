@@ -1,7 +1,7 @@
 {
   "name": "vue-random-colors",
   "description": "Vue.js directive for apply random colors to CSS properties of HTML element.",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "author": "Dmitry Shlepkin <acidl33t@gmail.com>",
   "main": "lib/index.js",
   "license": "MIT",
